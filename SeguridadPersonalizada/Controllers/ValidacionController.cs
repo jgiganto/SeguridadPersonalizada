@@ -27,8 +27,8 @@ namespace SeguridadPersonalizada.Controllers
                     (1 //version del ticket
                     , usuario //nombre del ticket
                     , DateTime.Now //momento de creacion del ticket
-                    , DateTime.Now.AddMinutes(3)//tiempo de expiracion
-                    , true //persistencia del ticket
+                    , DateTime.Now.AddSeconds(4)//tiempo de expiracion
+                    , true //persistencia del ticket poner a true
                     , validacion.Role //informacion extra del usuario, puedo guardar lo que quiera(String)
                     , FormsAuthentication.FormsCookiePath //ruta del ticket/cookie
                     );
