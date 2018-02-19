@@ -30,7 +30,7 @@ namespace SeguridadPersonalizada.Controllers
                     , DateTime.Now.AddSeconds(4)//tiempo de expiracion
                     , true //persistencia del ticket poner a true
                     , validacion.Role //informacion extra del usuario, puedo guardar lo que quiera(String)
-                    , FormsAuthentication.FormsCookiePath //ruta del ticket/cookie
+                    , FormsAuthentication.FormsCookiePath //ruta del ticket/cookie..
                     );
                 //todo ticket debe estar cifrado obligatoriamente.
                 String ticketcifrado = FormsAuthentication.Encrypt(ticket);
